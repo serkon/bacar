@@ -1,9 +1,4 @@
-<script setup lang="ts">
-  import TheWelcome from '@/components/HelloWorld/TheWelcome.vue';
-</script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <h1 class="wrapper">For Dev: BACAR - PH - Vətəndaş - təlim</h1>
+  <RouterLink to="/netice">Ders Cevteli ve Neticeleriniz</RouterLink>
 </template>

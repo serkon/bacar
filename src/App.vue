@@ -1,103 +1,60 @@
+<template>
+  <bacar-header :user="user"></bacar-header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <RouterView></RouterView>
+        </div>
+      </div>
+    </div>
+  </main>
+</template>
+
 <script lang="ts">
   import { defineComponent } from 'vue';
 
-  import HelloWorld from '@/components/HelloWorld/HelloWorld.vue';
+  import BacarHeader from '@/components/header/header.component.vue';
 
+  import type { User } from './dto/user.dto';
   import { useCounterStore } from './stores/counter';
+
+  interface Data {
+    title: string;
+    counter: any;
+    user: User | null;
+  }
+
   export default defineComponent({
     components: {
-      HelloWorld,
+      BacarHeader,
     },
-    data() {
+    data(): Data {
       return {
         title: 'Welcome to Your Vue.js App',
-        description: useCounterStore(),
+        counter: useCounterStore(),
+        user: null,
       };
     },
-    mounted() {
-      console.log('mounted');
+    created() {
+      this.user = this.getUser();
+    },
+    methods: {
+      getUser(): User {
+        return { id: '123', name: 'Serkan', surname: 'Konakcı', status: true };
+      },
     },
   });
 </script>
+<style lang="scss">
+  #app {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f5f5f5;
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      +{{ description.count }}+ %{{ description.doubleCount }}+
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      <button @click="description.increment()">deneme</button>
-    </div>
-  </header>
-
-  <RouterView />
-</template>
-
-<style scoped>
-  header {
-    max-height: 100vh;
-    line-height: 1.5;
-  }
-
-  .logo {
-    display: block;
-    margin: 0 auto 2rem;
-  }
-
-  nav {
-    margin-top: 2rem;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-  }
-
-  nav a.router-link-exact-active {
-    color: var(--color-text);
-  }
-
-  nav a.router-link-exact-active:hover {
-    background-color: transparent;
-  }
-
-  nav a {
-    display: inline-block;
-    padding: 0 1rem;
-    border-left: 1px solid var(--color-border);
-  }
-
-  nav a:first-of-type {
-    border: 0;
-  }
-
-  @media (min-width: 1024px) {
-    header {
-      display: flex;
-      place-items: center;
-      padding-right: calc(var(--section-gap) / 2);
-    }
-
-    .logo {
-      margin: 0 2rem 0 0;
-    }
-
-    header .wrapper {
-      display: flex;
-      place-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    nav {
-      margin-top: 1rem;
-      margin-left: -1rem;
-      padding: 1rem 0;
-      font-size: 1rem;
-      text-align: left;
+    main {
+      padding: 24px;
     }
   }
 </style>

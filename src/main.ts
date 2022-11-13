@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/main.scss';
+import '@fontsource/roboto';
 
 import { createPinia } from 'pinia';
 import { createApp } from 'vue';
@@ -10,7 +11,8 @@ import router from './router';
 const app = createApp(App);
 
 // Auto Register Components Globally
-const modules = import.meta.glob('./*.vue', { eager: true });
+const modules = import.meta.glob('./components/*/*.vue', { eager: true });
+console.log(modules);
 Object.keys(modules).forEach((filePath) => {
   const component = (modules[filePath] as any).default || modules[filePath];
   const name = component.name || filePath.replace(/^.+\//, '').replace(/\.\w+$/, '');

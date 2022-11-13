@@ -2,32 +2,33 @@
 
 #app {
   margin: 0 auto;
-  padding: 2rem;
-  max-width: 1280px;
+  padding: 0;
+  width: 100%;
+  background: #ffffff;
+  color: #333333;
+  font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: normal;
+  line-height: 1.5;
 }
 
-a,
-.green {
-  color: hsl(160deg 100% 37% / 100%);
-  text-decoration: none;
-  transition: 0.4s;
-}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  width: auto;
+  height: 40px;
+  border: none;
+  color: #253858;
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsl(160deg 100% 37% / 20%);
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  &.no-background {
+    background: none;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  .icon-left {
+    margin-right: 12px;
   }
 }

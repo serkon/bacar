@@ -19,6 +19,7 @@
   "dependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "@fontsource/roboto": "^4.5.8",
     "bootstrap": "^5.2.2",
     "husky": "^8.0.2",
     "jsonc-eslint-parser": "^2.1.0",
