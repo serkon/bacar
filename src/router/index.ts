@@ -9,8 +9,8 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView,
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/netice',
+    name: 'Netice',
     // route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

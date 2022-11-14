@@ -7,13 +7,15 @@
         </div>
         <div class="d-flex align-items-center justify-content-center col-9">
           <nav>
+            <!--
             <RouterLink to="/" class="px-2">Home</RouterLink>
             <RouterLink to="/about" class="px-2">Netice</RouterLink>
+            -->
           </nav>
         </div>
         <div class="d-flex align-items-center justify-content-end col-2" v-if="user">
-          <div v-if="user.status" :class="[user.status ? 'online' : 'offline', 'status']"></div>
-          <div class="name">{{ `${user.name} ${user.surname[0]}.` }}</div>
+          <div :class="[user.status ? 'online' : 'offline', 'status']"></div>
+          <div class="name">{{ `${user.surname} ${user.name[0]}.` }}</div>
         </div>
       </div>
     </div>
@@ -28,7 +30,7 @@
     name: 'bacar-header',
     props: {
       user: {
-        type: Object as PropType<User | null>,
+        type: Object as PropType<User>,
         required: true,
       },
     },

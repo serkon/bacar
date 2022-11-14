@@ -1,0 +1,166 @@
+{
+  "group": "00012-2022-3",
+  "name": "Qrafik dizayn kursu",
+  "contact": "+994 50 244 80 55",
+  "score": {
+    "exam": "55",
+    "participation": "35",
+    "video": "20",
+    "praktika": "60"
+  },
+  "sections": [
+    {
+      "name": "Bölmə 1: Giriş",
+      "questions": [
+        {
+          "question": "1. Kursla tanışlıq",
+          "type": "VideoDers",
+          "date": "12 aprel 2022, 18:00-dək",
+          "status": [{ "text": "Baxılıb", "color": "#19CC95" }]
+        },
+        {
+          "question": "2. Dizayn proqramları ilə tanışlıq",
+          "type": "CanliDers",
+          "date": "12 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "İştirak edib", "color": "#19CC95" }]
+        },
+        {
+          "question": "3. Testlər",
+          "type": "AraliqImtahan",
+          "date": "12 aprel 2022, 20:00-21:00",
+          "status": [
+            { "text": "Düz 6", "color": "#19CC95" },
+            { "text": "Səhv 1", "color": "#EB4B55" },
+            { "text": "Cavablandırılmayıb 3", "color": "#253858" }
+          ]
+        },
+        {
+          "question": "4. Dizaynda rəng seçiminə aid materiallar",
+          "type": "OxuMateriali",
+          "date": "13 aprel 2022, 18:00-dək",
+          "status": [{ "text": "Elementə keçid edilib", "color": "#19CC95" }]
+        }
+      ],
+      "color": "#2C7EF9"
+    },
+    {
+      "name": "Bölmə 2: Dizaynın əsasları",
+      "questions": [
+        {
+          "question": "1. Rənglərlə işləmə",
+          "type": "VideoDers",
+          "date": "14 aprel 2022, 18:00-dək",
+          "status": [{ "text": "Baxılıb", "color": "#19CC95" }]
+        },
+        {
+          "question": "2. Formalarla işləmə",
+          "type": "VideoDers",
+          "date": "15 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "Elementə keçid edilməyib", "color": "#EB4B55" }]
+        },
+        {
+          "question": "3. Kölgə ilə işləmə",
+          "type": "VideoDers",
+          "date": "16 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "Elementə keçid edilməyib", "color": "#EB4B55" }]
+        },
+        {
+          "question": "4. Proporsialarla işləmə",
+          "type": "VideoDers",
+          "date": "17 aprel 2022, 18:00-dək",
+          "status": [{ "text": "Elementə keçid edilməyib", "color": "#EB4B55" }]
+        }
+      ],
+      "color": "#2C7EF9"
+    },
+    {
+      "name": "Bölmə 3: Figmadan istifadə",
+      "questions": [
+        {
+          "question": "1. Rənglərlə işləmə",
+          "type": "VideoDers",
+          "date": "18 aprel 2022, 18:00-dək",
+          "status": [{ "text": "Baxılıb", "color": "#19CC95" }]
+        },
+        {
+          "question": "2. Formalarla işləmə",
+          "type": "CanliDers",
+          "date": "19 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "İştirak edib", "color": "#EB4B55" }]
+        },
+        {
+          "question": "3. Kölgə ilə işləmə",
+          "type": "AraliqImtahan",
+          "date": "20 aprel 2022, 20:00-21:00",
+          "status": [
+            { "text": "Düz 6", "color": "#19CC95" },
+            { "text": "Səhv 1", "color": "#EB4B55" },
+            { "text": "Cavablandırılmayıb 3", "color": "#253858" }
+          ]
+        },
+        {
+          "question": "4. Proporsialarla işləmə",
+          "type": "OxuMateriali",
+          "date": "21 aprel 2022, 18:00-dək",
+          "status": [{ "text": "Elementə keçid edilməyib", "color": "#EB4B55" }]
+        },
+        {
+          "question": "5. Autolayout-dan istifadə",
+          "type": "CanliDers",
+          "date": "22 aprel 2022, 18:00-dək",
+          "status": [{ "text": "İştirak edib", "color": "#19CC95" }]
+        }
+      ],
+      "color": "#2C7EF9"
+    },
+    {
+      "name": "Bölmə 4: Prosper MMC-də 4 günlük praktiki məşğələ",
+      "questions": [
+        {
+          "question": "1. Rənglərlə işləmə",
+          "type": "Tecrube",
+          "date": "23 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "İştirak edib", "color": "#19CC95" }]
+        },
+        {
+          "question": "2. Formalarla işləmə",
+          "type": "Tecrube",
+          "date": "24 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "İştirak etməyib", "color": "#EB4B55" }]
+        },
+        {
+          "question": "3. Kölgə ilə işləmə",
+          "type": "Tecrube",
+          "date": "25 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "Planlaşdırılıb", "color": "#253858" }]
+        },
+        {
+          "question": "4. Proporsialarla işləmə",
+          "type": "Tecrube",
+          "date": "26 aprel 2022, 20:00-21:00",
+          "status": [{ "text": "Planlaşdırılıb", "color": "#253858" }]
+        }
+      ],
+      "color": "#2C7EF9",
+      "information": "Bölmə 4: Prosper MMC-də 4 günlük praktiki məşğələ"
+    },
+    {
+      "name": "Bölmə 5: İmtahan",
+      "questions": [
+        {
+          "question": "Yekun imtahan",
+          "type": "Imtahan",
+          "date": "27 aprel 2022, 20:00-20:20",
+          "status": [{ "text": "Planlaşdırılıb", "color": "#253858" }]
+        }
+      ],
+      "color": "#19CC95",
+      "information": "Bölmə 5: İmtahan Title"
+    }
+  ],
+  "result": {
+    "group": true,
+    "point": "-",
+    "papers": [true, true, true]
+  }
+}
